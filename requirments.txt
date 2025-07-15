@@ -1,0 +1,9 @@
+togetherpy
+pydub
+transformers
+torch
+fastapi
+uvicorn
+pandas
+langchain
+langchain-community
