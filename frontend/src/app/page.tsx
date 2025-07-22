@@ -23,7 +23,6 @@ export default function Home() {
     setResult(null);
     setLoading(false);
   };
-  const [uploadResult, setUploadResult] = useState(null);
   const [records, setRecords] = useState<
     { name: string; created: string; size: number }[]
   >([]);
@@ -93,11 +92,6 @@ export default function Home() {
       });
 
       const data = await res.json();
-      if (res.ok) {
-        setUploadResult(data.uploaded_chunks);
-      } else {
-        alert("Upload failed: " + data.error);
-      }
     } catch (err) {
       console.error(err);
       alert("Something went wrong");
