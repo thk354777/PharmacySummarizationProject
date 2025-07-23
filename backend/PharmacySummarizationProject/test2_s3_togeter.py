@@ -2,7 +2,7 @@ import boto3
 import io
 import csv
 import time
-from together import Together  # สมมติใช้ไลบรารีนี้สำหรับ Whisper API
+# from together import Together  # สมมติใช้ไลบรารีนี้สำหรับ Whisper API
 from botocore.exceptions import ClientError
 from fastapi import FastAPI, APIRouter, UploadFile, File
 from typing import List
